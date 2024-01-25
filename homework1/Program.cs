@@ -66,13 +66,17 @@
 
 //Task4
 
-int number = 100;
-int i = 1;
-while (i <= number)
-{
-    if (i % 2 == 0)
-    {
-        Console.Write(i + " ");
-    }
-    i++;
-}
+// int number = 100;
+// int i = 1;
+// while (i <= number)
+// {
+//     if (i % 2 == 0)
+//     {
+//         Console.Write(i + " ");
+//     }
+//     i++;
+// }
+
+int a = 435;
+int res = a / 100;
+Console.WriteLine(res);
