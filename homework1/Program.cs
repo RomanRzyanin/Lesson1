@@ -18,39 +18,20 @@
 
 // Task2
 
-// int a = 7;
-// int b = 7;
-// int c = 7;
-// //int max = a;
-// if (a > b & a > c)
-// {
-//     Console.WriteLine("max = " + a);
-// }
-// if (b > a & b > c)
-// {
-//     Console.WriteLine("max = " + b);
-// }
-// if (c > b & c > a)
-// {
-//     Console.WriteLine("max = " + c);
-// }
-// if (a == b & b == c)
-// {
-//     Console.WriteLine("The numbers are equai");
-// }
-// if (a > b & a > c)
-// {
-//     FindMax = a;
-// }
-// if (b > a & b > c)
-// {
-//     FindMax = b;
-// }
-// if (c > b & c > a)
-// {
-//     FindMax = c;
-// }
+long a = 2539825;
+long b = 16245238;
+long c = 11823956237854;
+long FindMax = a;
+if (b > a) // & b > c)
+{
+    FindMax = b;
+}
+if (c > b) // & c > b)
+{
+    FindMax = c;
+}
 // return FindMax;
+Console.WriteLine("max = " + FindMax);
 
 //Task3
 
@@ -66,7 +47,7 @@
 
 //Task4
 
-// int number = 100;
+// int number = 1000;
 // int i = 1;
 // while (i <= number)
 // {
@@ -77,6 +58,6 @@
 //     i++;
 // }
 
-int a = 435;
-int res = a / 100;
-Console.WriteLine(res);
+// int a = 435;
+// int res = a / 100;
+// Console.WriteLine(res);
