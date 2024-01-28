@@ -18,8 +18,8 @@
 
 // Task2
 
-long a = 2539825;
-long b = 16245238;
+long a = 2539825349603967;
+long b = 162452382523530925;
 long c = 11823956237854;
 long FindMax = a;
 if (b > a) // & b > c)
