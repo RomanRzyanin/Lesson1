@@ -68,7 +68,14 @@
 //а на выходе показывает его цифры через запятую.
 
 int number = 2375629;
-string str = number.ToString;
-
-//int len = (int)number.ToString().Lenght;
-Console.WriteLine(str);
+int digit_count = (int)Math.Log10(number) + 1;
+int i = 0;
+while (i < digit_count)
+{
+    
+    int res = number % 10;
+    Console.Write(res +", ");
+    number = number / 10;
+    i++;
+    
+}
