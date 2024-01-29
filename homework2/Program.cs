@@ -64,4 +64,11 @@
 //     Console.WriteLine("Число не двузначное!");
 // }
 
-//Task4   
+//Task4   Задача 4: Напишите программу, которая на вход принимает натуральное число N, 
+//а на выходе показывает его цифры через запятую.
+
+int number = 2375629;
+string str = number.ToString;
+
+//int len = (int)number.ToString().Lenght;
+Console.WriteLine(str);
