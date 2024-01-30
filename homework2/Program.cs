@@ -67,15 +67,19 @@
 //Task4   Задача 4: Напишите программу, которая на вход принимает натуральное число N, 
 //а на выходе показывает его цифры через запятую.
 
-int number = 2375629;
-int digit_count = (int)Math.Log10(number) + 1;
-int i = 0;
+int number = 2125345674;
+//string myString = number.ToString();
+//int length = myString.Length;
+Console.Write($"{length}, Строка   "); 
+int digit_count = (int)Math.Log10(number) + 1; //Нахождение длины числа через десятичный логарифм
+int x = digit_count -1;  //Переменная для вычисления степени
+int i = 0;               //Счетчик цикла
 while (i < digit_count)
 {
     
-    int res = number % 10;
-    Console.Write(res +", ");
-    number = number / 10;
+    int res = number / (int)Math.Pow(10, x); //Вычисление первой цифры в числе
+    Console.Write($"{res}, ");
+    number = number - (res * (int)Math.Pow(10, x)); // Определение нового числа без первой цифры
+    x--;
     i++;
-    
-}
+    }
