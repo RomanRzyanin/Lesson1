@@ -23,23 +23,27 @@
 //Task2    Задача 2: Напишите программу, которая принимает на вход координаты точки (X и Y), 
 //причём X ≠ 0 и Y ≠ 0 и выдаёт номер координатной четверти плоскости, в которой находится эта точка.
 
-// int x = 4;
+// int x = 0;
 // int y = -7;
 // if (x > 0 && y > 0)
 // {
 //     Console.WriteLine($"Точка ({x},{y}) находиться в  I четверти");
 // }
-// if (x < 0 && y > 0)
+// else if (x < 0 && y > 0)
 // {
 //     Console.WriteLine($"Точка ({x},{y}) находиться во  II четверти");
 // }
-// if (x < 0 && y < 0)
+// else if (x < 0 && y < 0)
 // {
 //     Console.WriteLine($"Точка ({x},{y}) находиться в  III четверти");
 // }
-// if (x > 0 && y < 0)
+// else if (x > 0 && y < 0)
 // {
 //     Console.WriteLine($"Точка ({x},{y}) находиться в  IV четверти");
+// }
+// else
+// {
+//     Console.WriteLine($"Точка ({x},{y}) находиться находиться на оси координат");
 // }
 
 //Task3     Задача 3: Напишите программу, которая принимает на вход целое число из отрезка [10, 99] 
@@ -67,24 +71,55 @@
 //Task4   Задача 4: Напишите программу, которая на вход принимает натуральное число N, 
 //а на выходе показывает его цифры через запятую.
 
-int number = 123456789;
-string myString = number.ToString();  //Перевод числа в строку
-int length = myString.Length;         //Нахождение длины строки
-//int digit_count = (int)Math.Log10(number) + 1; //Нахождение длины числа через десятичный логарифм (один из вариантов)
-int x = length -1;  //Переменная для вычисления степени
-int i = 0;          //Переменная для счетчика цикла
-while (i < length)
-{
-    int res  = number / (int)Math.Pow(10, x); //Вычисление первой цифры в числе
-    if (i >= 0 && i < length - 1)
-    {
-        Console.Write($"{res}, ");
-    }
-    else
-    {
-        Console.Write(res);
-    }
-    number = number - (res * (int)Math.Pow(10, x)); // Определение нового числа без первой цифры
-    x--;
-    i++;
-}
+// int number = 123456789;
+// string myString = number.ToString();  //Перевод числа в строку
+// int length = myString.Length;         //Нахождение длины строки
+// //int digit_count = (int)Math.Log10(number) + 1; //Нахождение длины числа через десятичный логарифм (один из вариантов)
+// int x = length -1;  //Переменная для вычисления степени
+// int i = 0;          //Переменная для счетчика цикла
+// while (i < length)
+// {
+//     int res  = number / (int)Math.Pow(10, x); //Вычисление первой цифры в числе
+//     if (i >= 0 && i < length - 1)
+//     {
+//         Console.Write($"{res}, ");
+//     }
+//     else
+//     {
+//         Console.Write(res);
+//     }
+//     number = number - (res * (int)Math.Pow(10, x)); // Определение нового числа без первой цифры
+//     x--;
+//     i++;
+// }
+
+// Задача из эталонных решений
+// using System;
+//     class Program   
+//         {
+//             static void Main()
+//                 {
+//                     Console.Write("Введите натуральное число N: ");
+//                     int N = Convert.ToInt32(Console.ReadLine());
+//                     if (N < 10)
+//                     {
+//                         Console.WriteLine(N);
+//                     }
+//                     else
+//                     {
+//                         while (N > 0)
+//                         {
+//                             int currentDigit = N % 10;
+//                             N /= 10;
+//                             if (N > 0)
+//                             {
+//                                 Console.Write(currentDigit + ",");
+//                             }
+//                             else
+//                             {
+//                                 Console.WriteLine(currentDigit);
+//                             }
+//                         }
+//                     }
+//                 }
+//         }
